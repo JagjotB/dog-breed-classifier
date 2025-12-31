@@ -18,9 +18,9 @@
 import argparse
 
 def get_input_args():
-    parser = arg.parse.ArguementParser()
+    parser = argparse.ArgumentParser()
 
-    parser.add_arguement('--dir', type=str, defults='pet_images/',
+    parser.add_argument('--dir', type=str, defult ='pet_images/',
                          help='path to folder of images')
     
     parser.add_argument('--arch', type=str, default = 'vgg', help='CNN model architecture to use')
