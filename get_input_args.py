@@ -1,14 +1,3 @@
-import argparse
-
-# TODO 1: Define get_input_args function below please be certain to replace None
-#       in the return statement with parser.parse_args() parsed argument 
-#       collection that you created with this function
-# 
-def get_input_args():
-    parser = arg.parse.ArguementParser()
-    parser.add_arguement('--dir', type=str, defults='pet_images/',
-                         help'path to folder of images')
-    
     """
     Retrieves and parses the 3 command line arguments provided by the user when
     they run the program from a terminal window. This function uses Python's 
@@ -25,11 +14,14 @@ def get_input_args():
     Returns:
      parse_args() -data structure that stores the command line arguments object  
     """
-    # Create Parse using ArgumentParser
-    
-    # Create 3 command line arguments as mentioned above using add_argument() from ArguementParser method
-    
-    
-    # Replace None with parser.parse_args() parsed argument collection that 
-    # you created with this function 
+
+import argparse
+
+def get_input_args():
+    parser = arg.parse.ArguementParser()
+    parser.add_arguement('--dir', type=str, defults='pet_images/',
+                         help'path to folder of images')
+    parser.add_argument('--arch', default = 'vgg' )
+    parser.add_argument('--dogfile', default = 'dognames.txt' )
+
     return parser.parse_args()
