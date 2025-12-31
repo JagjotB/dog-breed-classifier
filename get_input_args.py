@@ -19,9 +19,12 @@ import argparse
 
 def get_input_args():
     parser = arg.parse.ArguementParser()
+
     parser.add_arguement('--dir', type=str, defults='pet_images/',
-                         help'path to folder of images')
-    parser.add_argument('--arch', default = 'vgg' )
-    parser.add_argument('--dogfile', default = 'dognames.txt' )
+                         help='path to folder of images')
+    
+    parser.add_argument('--arch', type=str, default = 'vgg', help='CNN model architecture to use')
+
+    parser.add_argument('--dogfile', type=str, default = 'dognames.txt', help='text file containing dog breed names')
 
     return parser.parse_args()
