@@ -1,8 +1,8 @@
 Dog Breed Classifier – ImageNet CNN Evaluation
 
-    This project implements an end-to-end image classification pipeline in Python that evaluates pretrained convolutional neural networks on pet images. The system determines whether an image contains a dog and, if so, whether the dog’s breed is correctly identified. The focus of the project is on data preprocessing, evaluation logic, and error analysis rather than model training.
+This project implements an end-to-end image classification pipeline in Python that evaluates pretrained convolutional neural networks on pet images. The system determines whether an image contains a dog and, if so, whether the dog’s breed is correctly identified. The focus of the project is on data preprocessing, evaluation logic, and error analysis rather than model training.
 
-    The project demonstrates how label quality and evaluation design directly affect model performance and highlights practical transfer learning workflows used in real-world machine learning systems.
+The project demonstrates how label quality and evaluation design directly affect model performance and highlights practical transfer learning workflows used in real-world machine learning systems.
 
 Project Objectives
 
